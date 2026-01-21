@@ -1,0 +1,22 @@
+{
+  "bundleAlias": "charts",    // Bundle widgetu (zestaw dostępnych typów)
+  "alias": "example-widget",  // Unikalna nazwa widgetu w dashboardzie
+  "type": "timeseries",       // Typ widgetu
+  "title": "Example Widget",
+  "sizeX": 6,
+  "sizeY": 6,
+  "config": {                 // Konfiguracja wizualna
+    "datasources": [
+      {
+        "type": "device",        // Źródło danych
+        "deviceId": "DEVICE_ID",
+        "dataKeys": [
+          {
+            "name": "temperature",
+            "type": "timeseries"
+          }
+        ]
+      }
+    ]
+  }
+}

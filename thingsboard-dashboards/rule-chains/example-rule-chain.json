@@ -1,0 +1,19 @@
+{
+  "name": "Example Rule Chain",
+  "root": true,                // Czy to główny rule chain
+  "nodes": [
+    {
+      "id": "NODE_ID",         // UUID węzła
+      "type": "TbRuleNode",    // Typ węzła (np. transform, filter, originator)
+      "name": "Example Node",
+      "configuration": {},     // Konfiguracja węzła
+      "filters": [],           // Warunki filtrowania (opcjonalnie)
+      "relations": [
+        {
+          "type": "Success",    // Typ połączenia (Success, Failure)
+          "target": "NODE_ID"   // ID kolejnego węzła
+        }
+      ]
+    }
+  ]
+}

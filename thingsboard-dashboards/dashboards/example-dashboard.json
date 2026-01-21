@@ -1,0 +1,20 @@
+{
+  "id": "string",             // UUID dashboardu lub null przy imporcie
+  "tenantId": "string",       // UUID tenant'a lub null przy imporcie
+  "title": "Example Dashboard",
+  "configuration": {          // Układ widgetów
+    "widgets": [
+      {
+        "widgetId": "string",    // UUID widgetu lub odwołanie
+        "row": 0,                // Pozycja w układzie
+        "col": 0,
+        "sizeX": 6,              // Szerokość widgetu w kolumnach
+        "sizeY": 6               // Wysokość widgetu w wierszach
+      }
+    ],
+    "layout": {
+      "columns": 24             // Liczba kolumn w dashboardzie
+    }
+  },
+  "assignedCustomers": []     // Można zostawić puste
+}
